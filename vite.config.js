@@ -7,4 +7,10 @@ export default defineConfig({
   build: {
     outDir: "dist"  // Ensures Vercel deploys from 'dist' folder
   }
+  ,
+  resolve: {
+    alias: {
+      '@': '/src' // Ensures correct path resolution
+    }
+  }
 })
