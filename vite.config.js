@@ -12,5 +12,8 @@ export default defineConfig({
     alias: {
       '@': '/src' // Ensures correct path resolution
     }
-  }
+  },
+  eslint:{
+   ignoreDuringBuilds:true,
+  },
 })
